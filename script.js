@@ -5,6 +5,7 @@ const dots = document.querySelectorAll('.carousel-indicators .dot');
 const itemWidth = document.querySelector('.carousel-item').offsetWidth + 16;
 let currentIndex = 0;
 let autoScrollInterval;
+let isUserInteracting = false;
 
 function scrollToIndex(index) {
   carousel.scrollTo({
@@ -25,13 +26,25 @@ dots.forEach(dot => {
 });
 
 function autoScroll() {
-  const nextIndex = (currentIndex + 1) % dots.length;
-  scrollToIndex(nextIndex);
+  if (!isUserInteracting) {
+    const nextIndex = (currentIndex + 1) % dots.length;
+    scrollToIndex(nextIndex);
+  }
 }
 
 function resetAutoScroll() {
   clearInterval(autoScrollInterval);
   autoScrollInterval = setInterval(autoScroll, 3000);
 }
+
+carousel.addEventListener('touchstart', () => {
+  isUserInteracting = true;
+  clearInterval(autoScrollInterval);
+});
+
+carousel.addEventListener('touchend', () => {
+  isUserInteracting = false;
+  resetAutoScroll();
+});
 
 resetAutoScroll();
