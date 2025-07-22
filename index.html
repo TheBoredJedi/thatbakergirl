@@ -5,17 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>That Baker Girl</title>
   
- <meta name="google-site-verification" content="XkB_pLHn-tXwNKTUouOQjqZvwFUDwWmz-jD-LGw1PZ0" />
+  <meta name="google-site-verification" content="XkB_pLHn-tXwNKTUouOQjqZvwFUDwWmz-jD-LGw1PZ0" />
   <meta name="description" content="That Baker Girl - Freshly baked cakes, buns, and more delivered with love. Order now!">
   <meta name="keywords" content="That Baker Girl, bakery, cakes, korean buns, Bangalore, online bakery">
   <meta name="author" content="That Baker Girl">
   
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      gap: 16px;
+      padding: 1em;
+      margin-bottom: 2em;
+      -webkit-overflow-scrolling: touch;
+      animation: scroll 30s linear infinite;
+    }
+
+    .carousel-item {
+      flex: 0 0 auto;
+      width: 250px;
+      text-align: center;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    .carousel-caption {
+      font-size: 0.9rem;
+      color: #6a4e42;
+      margin-top: 0.5em;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2.5rem; }
+      .carousel-item { width: 200px; }
+    }
+  </style>
 </head>
 <body>
   <h1>That Baker Girl</h1>
- <!-- <p class="tagline">Happy Birthday Baby!!!</p> -->
+  <!-- <p class="tagline">Happy Birthday Baby!!!</p> -->
 
   <p>Welcome to your go-to place for artisanal bakes, delivered fresh to your doorstep. From Korean Buns to Celebration cakes, everything is made with love and real butter 🧁</p>
 
@@ -24,17 +65,55 @@
   <div class="buttons">
     <a href="menu.pdf" target="_blank">View Menu</a>
     <a href="https://wa.me/919141041707" target="_blank">Place Order</a>
-    <a href="https://www.instagram.com/thatbakergirl.blr/" target="_blank">Instagram</a>
-    <a href="https://thatbakergirl.mini.store/" target="_blank">Ministore</a>
-    <a href="https://chat.whatsapp.com/DyAiNEo17Pp6BzpXSyYkTe" target="_blank">Join WhatsApp Updates</a>
   </div>
 
   <div class="carousel">
-    <img src="photos/bentocake.webp" alt="Bento Cake">
-    <img src="photos/brownies.webp" alt="Brownies">
-    <img src="photos/bundt.webp" alt="Bundt Cake">
-    <img src="photos/cinnamonrolls.webp" alt="Cinnamon Rolls">
-    <img src="photos/tiramisu.webp" alt="Tiramisu">
+    <div class="carousel-item">
+      <img src="photos/bentocake.webp" alt="Bento Cake">
+      <div class="carousel-caption">Bento Cake</div>
+    </div>
+    <div class="carousel-item">
+      <img src="photos/brownies.webp" alt="Brownies">
+      <div class="carousel-caption">Brownies</div>
+    </div>
+    <div class="carousel-item">
+      <img src="photos/bundt.webp" alt="Bundt Cake">
+      <div class="carousel-caption">Bundt Cake</div>
+    </div>
+    <div class="carousel-item">
+      <img src="photos/cinnamonrolls.webp" alt="Cinnamon Rolls">
+      <div class="carousel-caption">Cinnamon Rolls</div>
+    </div>
+    <div class="carousel-item">
+      <img src="photos/tiramisu.webp" alt="Tiramisu">
+      <div class="carousel-caption">Tiramisu</div>
+    </div>
+    <div class="carousel-item">
+      <img src="photos/carrotcake.webp" alt="Carrot Cake">
+      <div class="carousel-caption">Carrot Cake</div>
+    </div>
+    <div class="carousel-item">
+      <img src="photos/chocchunk.webp" alt="Chocolate Chunk Cookies">
+      <div class="carousel-caption">Chocolate Chunk Cookies</div>
+    </div>
+    <div class="carousel-item">
+      <img src="photos/chocchunkbrownies.webp" alt="Chocolate Chunk Brownies">
+      <div class="carousel-caption">Chocolate Chunk Brownies</div>
+    </div>
+    <div class="carousel-item">
+      <img src="photos/chocoandberries.webp" alt="Chocolate and Berries Cake">
+      <div class="carousel-caption">Chocolate & Berries Cake</div>
+    </div>
+    <div class="carousel-item">
+      <img src="photos/chocobiscoff.webp" alt="Choco Biscoff Cake">
+      <div class="carousel-caption">Choco Biscoff Cake</div>
+    </div>
+  </div>
+
+  <div class="social-links">
+    <a href="https://www.instagram.com/thatbakergirl.blr/" target="_blank">Instagram</a> |
+    <a href="https://thatbakergirl.mini.store/" target="_blank">Ministore</a> |
+    <a href="https://chat.whatsapp.com/DyAiNEo17Pp6BzpXSyYkTe" target="_blank">Join WhatsApp Updates</a>
   </div>
 
   <footer>
