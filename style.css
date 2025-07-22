@@ -25,6 +25,18 @@ h1 {
   margin-bottom: 1.5em;
 }
 
+.announcement-banner {
+  background-color: #ffebcd;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  color: #5c3a1e;
+}
+
+.announcement-banner.secondary {
+  background-color: #fff3e6;
+}
+
 .buttons {
   display: flex;
   flex-wrap: wrap;
@@ -126,6 +138,19 @@ h1 {
 
 .carousel-indicators .dot.active {
   background-color: #b45f06;
+}
+
+
+.instagram-embed {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.instagram-embed iframe {
+  width: 100%;
+  max-width: 400px;
+  height: 480px;
+  border-radius: 12px;
 }
 
 .social-links {
