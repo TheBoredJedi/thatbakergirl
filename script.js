@@ -24,18 +24,3 @@ function autoScroll() {
 }
 
 autoScroll();
-
-// Manual scroll with arrows
-leftArrow.addEventListener('click', () => {
-  carousel.scrollBy({
-    left: -260,
-    behavior: 'smooth'
-  });
-});
-
-rightArrow.addEventListener('click', () => {
-  carousel.scrollBy({
-    left: 260,
-    behavior: 'smooth'
-  });
-});
