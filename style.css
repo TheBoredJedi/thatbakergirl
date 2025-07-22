@@ -40,7 +40,6 @@ h1 {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Highlighted buttons */
 .buttons a[href$="menu.pdf"],
 .buttons a[href*="wa.me"] {
   background-color: #b45f06;
@@ -49,7 +48,6 @@ h1 {
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-/* Subtle buttons (to be removed) */
 .buttons a:not([href$="menu.pdf"]):not([href*="wa.me"]) {
   display: none;
 }
@@ -62,17 +60,36 @@ h1 {
 .carousel {
   display: flex;
   overflow-x: auto;
+  scroll-behavior: smooth;
   gap: 16px;
   padding: 1em;
-  scroll-behavior: smooth;
   margin-bottom: 2em;
+  -webkit-overflow-scrolling: touch;
+  animation: scroll 30s linear infinite;
 }
 
-.carousel img {
-  max-height: 200px;
+.carousel-item {
+  flex: 0 0 auto;
+  width: 250px;
+  text-align: center;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
   border-radius: 10px;
-  flex-shrink: 0;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-caption {
+  font-size: 0.9rem;
+  color: #6a4e42;
+  margin-top: 0.5em;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 .social-links {
@@ -96,4 +113,9 @@ footer {
   font-size: 0.9rem;
   color: #a68d86;
   margin-top: 3em;
+}
+
+@media (max-width: 768px) {
+  h1 { font-size: 2.5rem; }
+  .carousel-item { width: 200px; }
 }
