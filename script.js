@@ -1,5 +1,8 @@
 const carousel = document.querySelector('.carousel');
+const leftArrow = document.querySelector('.carousel-arrow.left');
+const rightArrow = document.querySelector('.carousel-arrow.right');
 
+// Auto-scroll setup
 const items = Array.from(carousel.children);
 items.forEach(item => {
   const clone = item.cloneNode(true);
@@ -21,3 +24,18 @@ function autoScroll() {
 }
 
 autoScroll();
+
+// Manual scroll with arrows
+leftArrow.addEventListener('click', () => {
+  carousel.scrollBy({
+    left: -260,
+    behavior: 'smooth'
+  });
+});
+
+rightArrow.addEventListener('click', () => {
+  carousel.scrollBy({
+    left: 260,
+    behavior: 'smooth'
+  });
+});
