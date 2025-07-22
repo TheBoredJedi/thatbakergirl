@@ -131,6 +131,26 @@ h1 {
   right: 10px;
 }
 
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 1em;
+}
+
+.carousel-indicators .dot {
+  width: 10px;
+  height: 10px;
+  background-color: #c4b8b4;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.carousel-indicators .dot.active {
+  background-color: #b45f06;
+}
+
+
 .social-links {
   margin-top: 2em;
   font-size: 0.9rem;
