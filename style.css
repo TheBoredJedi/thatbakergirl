@@ -15,7 +15,7 @@ body {
 h1 {
   font-family: 'Great Vibes', cursive;
   font-size: 4rem;
-  margin: 0.5em 0 0.2em;
+  margin: 0.5em 0 0.1em;
   color: #b45f06;
 }
 
@@ -154,7 +154,7 @@ h1 {
 }
 
 .social-links {
-  margin-top: 2em;
+  margin-top: 0.5em;
   font-size: 0.95rem;
   color: #7b5e57;
   display: flex;
