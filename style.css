@@ -25,7 +25,7 @@ h1 {
 }
 
 .logo-heading img {
-  width: 180px;
+  width: 60%;
   height: auto;
 }
 
@@ -36,15 +36,15 @@ h1 {
 }
 
 .announcement-banner {
-  background-color: #fcce99;
+  background-color: #5b6351;
   text-align: center;
   padding: 10px;
   font-weight: bold;
-  color: #5c3a1e;
+  color: #ede5d9;
 }
 
 .announcement-banner.secondary {
-  background-color: #fff3e6;
+  background-color: #ede5d9;
 }
 
 .buttons {
