@@ -4,19 +4,20 @@ body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #ede5d9;
-  color: #3c2f2f;
+  background-color: #67705a ;
+  color: #ede5d9;
   text-align: center;
   line-height: 1.6;
   padding: 20px;
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
+#ede5d9
 h1 {
   font-family: 'Adorable Memories';
   font-size: 4rem;
   margin: 0.5em 0 0.1em;
-  color: #67705a;
+  color: #ede5d9;
 }
 
 .logo-heading {
@@ -30,7 +31,7 @@ h1 {
 
 .tagline {
   font-size: 1.2rem;
-  color: #6a4e42;
+  color: #ede5d9;
   margin-bottom: 1.5em;
 }
 
@@ -64,8 +65,8 @@ h1 {
 
 .buttons a[href$="menu.pdf"],
 .buttons a[href*="wa.me"] {
-  background-color: #67705a;
-  color: #fff;
+  background-color: #5b6351;
+  color: #ede5d9;
   font-size: 1rem;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
@@ -75,7 +76,7 @@ h1 {
 }
 
 .buttons a:hover {
-  background-color: #434D36;
+  background-color: #444d39;
   color: #fff;
 }
 
@@ -126,7 +127,7 @@ h1 {
 
 .carousel-caption {
   font-size: 0.9rem;
-  color: #6a4e42;
+  color: #ede5d9;
   margin-top: 0.5em;
 }
 
@@ -140,13 +141,13 @@ h1 {
 .carousel-indicators .dot {
   width: 10px;
   height: 10px;
-  background-color: #c4b8b4;
+  background-color: #8a847c;
   border-radius: 50%;
   transition: background-color 0.3s;
 }
 
 .carousel-indicators .dot.active {
-  background-color: #b45f06;
+  background-color: #ede5d9;
 }
 
 
@@ -165,7 +166,7 @@ h1 {
 .social-links {
   margin-top: 0.5em;
   font-size: 0.95rem;
-  color: #7b5e57;
+  color: #ede5d9;
   display: flex;
   justify-content: center;
   gap: 1.2em;
@@ -175,7 +176,7 @@ h1 {
 }
 
 .social-links a {
-  color: #7b5e57;
+  color: #ede5d9;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -192,12 +193,12 @@ h1 {
 }
 
 .social-links a:hover {
-  color: #b45f06;
+  color: #ede5d9;
 }
 
 footer {
   font-size: 0.9rem;
-  color: #a68d86;
+  color: #ede5d9;
   margin-top: 3em;
 }
 
