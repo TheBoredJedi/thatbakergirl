@@ -63,7 +63,7 @@ h1 {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.buttons a[href$="menu.pdf"],
+.buttons a[href$="/menu.pdf?v=may2026"],
 .buttons a[href*="wa.me"] {
   background-color: #5b6351;
   color: #ede5d9;
@@ -71,7 +71,7 @@ h1 {
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.buttons a:not([href$="menu.pdf"]):not([href*="wa.me"]) {
+.buttons a:not([href$="/menu.pdf?v=may2026"]):not([href*="wa.me"]) {
   display: none;
 }
 
