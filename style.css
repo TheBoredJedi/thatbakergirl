@@ -64,14 +64,15 @@ h1 {
 }
 
 .buttons a[href$="/menu.pdf?v=june2026"],
-.buttons a[href*="wa.me"] {
+.buttons a[href*="wa.me"],
+.buttons a[href*="airmenus.in"]  {
   background-color: #5b6351;
   color: #ede5d9;
   font-size: 1rem;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.buttons a:not([href$="/menu.pdf?v=june2026"]):not([href*="wa.me"]) {
+.buttons a:not([href$="/menu.pdf?v=june2026"]):not([href*="wa.me"]):not([href*="airmenus.in"]) {
   display: none;
 }
 
